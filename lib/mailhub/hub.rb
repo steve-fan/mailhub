@@ -5,6 +5,7 @@ module Mailhub
   class Hub
     attr_accessor :settings
 
+    # TODO: pass vendor as parameters
     def initialize(settings)
       @settings = settings
       @postmark_client = ::Postmark::ApiClient.new(settings[:postmark_api_token])
