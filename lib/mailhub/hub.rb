@@ -18,7 +18,7 @@ module Mailhub
       mail
     end
 
-    def self.vendors
+    def vendors
       [:postmark]
     end
 
